@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 25px 0;
+  text-align: center;
+}
+
+main {
+  margin: 0 5%;
+  display: flex;
+  gap: 15px;
+}
+
+section {
+  width: 100%;
+}
+
+form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  font-size: 18px;
+  padding: 4px;
+}
+
+#submit {
+  width: fit-content;
+}
+
+.listOfGames {
+  margin-top: 15px;
+  list-style: none;
+  border: 1px solid black;
+}
+
+.listOfGames li {
+  margin-top: 4px;
+  padding: 6px;
+}
+
+.listOfGames li:nth-child(even) {
+  background-color: rgb(203, 201, 201);
+}
+
+button {
+  padding: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media screen and (min-width:760px){
+  main {
+    margin: 0 20%;
+    gap: 25px;
+  }
+}

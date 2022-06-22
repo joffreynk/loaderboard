@@ -1,7 +1,7 @@
 const scores = [];
 
 if (localStorage.getItem('scores')) {
-  JSON.parse(localStorage.getItem('scores')).forEach(element => {
+  JSON.parse(localStorage.getItem('scores')).forEach((element) => {
     scores.push(element);
   });
 }

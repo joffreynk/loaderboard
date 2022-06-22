@@ -1,6 +1,6 @@
-import  './index.css';
-import {displayScore} from './modules/displyScores.js';
-import {scores, addScore} from './modules/manageData.js';
+import './index.css';
+import displayScore from './modules/displyScores.js';
+import { scores, addScore } from './modules/manageData.js';
 
 const submit = document.querySelector('#submit');
 submit.addEventListener('click', () => {

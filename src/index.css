@@ -55,7 +55,7 @@ button {
   font-weight: bold;
 }
 
-@media screen and (min-width:760px){
+@media screen and (min-width: 760px) {
   main {
     margin: 0 20%;
     gap: 25px;

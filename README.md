@@ -2,7 +2,7 @@
 
 # Leaderboard
 
-> web application to record the gamer players and their scores
+> web application to record game players and their scores
 
 
 ## Built With

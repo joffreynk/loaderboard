@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loaderboard</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <header><h1>Loaderboard</h1></header>
+    <main>
+      <section class="displayGame">
+        <h2>Recent score <button id="refresh">Refresh</button></h2>
+        <ul class="listOfGames"></ul>
+      </section>
+      <section class="formGame">
+        <h2>Add your score</h2>
+        <form>
+          <input type="text" name="username" id="username" required placeholder="Your name">
+          <input type="number" name="userscore" id="userscore" placeholder="Your score">
+          <button type="button" id="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 import './index.css';
-import {getScores, addScore } from './modules/manageData.js';
+import { getScores, addScore } from './modules/manageData.js';
 
 const submit = document.querySelector('#submit');
 submit.addEventListener('click', () => {
@@ -8,7 +8,7 @@ submit.addEventListener('click', () => {
 
 const refresh = document.querySelector('#refresh');
 refresh.addEventListener('click', () => {
-  getScores()
+  getScores();
 });
 
-getScores()
+getScores();

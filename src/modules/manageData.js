@@ -4,7 +4,6 @@ const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/game
 
 const getScores = async () => {
   const response = await fetch(url);
-  console.log(response);
   const res = await response.json();
   const data = res.result;
   displayScore(data);
@@ -24,6 +23,8 @@ const createGame = async () => {
   const res = data.result;
   return res;
 };
+
+createGame();
 
 const addScores = (name, score) => {
   const data = {

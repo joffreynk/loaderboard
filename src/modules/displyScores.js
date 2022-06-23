@@ -3,7 +3,7 @@ const displayScore = (scores) => {
   listDOM.innerHTML = '';
   scores.forEach(({ user, score }) => {
     const li = document.createElement('li');
-    li.innerHTML = `${user}:  ${score}`;
+    li.innerHTML = `${user}: ${score}`;
     listDOM.appendChild(li);
   });
 };

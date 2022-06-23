@@ -2,7 +2,7 @@
 
 # Leaderboard
 
-> web application to record game players and their scores
+> web application to record game players and their scores, the application uses data from API. A user can add and retrieve data
 
 
 ## Built With

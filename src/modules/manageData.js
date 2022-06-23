@@ -1,9 +1,10 @@
-import displayScore from './displyScores.js'
+import displayScore from './displyScores.js';
 
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/:t4bYQQWnDnxUBQep5kfZ/scores';
 
 const getScores = async () => {
   const response = await fetch(url);
+  console.log(response);
   const res = await response.json();
   const data = res.result;
   displayScore(data);
@@ -12,8 +13,8 @@ const getScores = async () => {
 const createGame = async () => {
   const createGameUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
   const optionsData = {
-    method:'POST',
-    body: JSON.stringify({name:'JoffreyGame'}),
+    method: 'POST',
+    body: JSON.stringify({ name: 'JoffreyGame' }),
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
     },
@@ -24,6 +25,17 @@ const createGame = async () => {
   return res;
 };
 
+const addScores = (name, score) => {
+  const data = {
+    method: 'POST',
+    body: JSON.stringify({ user: name, score }),
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8',
+    },
+  };
+  fetch(url, data);
+};
+
 const addScore = () => {
   const name = document.querySelector('#username');
   const score = document.querySelector('#userscore');
@@ -32,17 +44,6 @@ const addScore = () => {
   addScores(namev, scorev);
   name.value = '';
   score.value = '';
-};
-
-const  addScores = (name, score) => {
-  const data = {
-    method:'POST',
-    body: JSON.stringify({user:name, score:score}),
-    headers: {
-      'Content-Type': 'application/json;charset=utf-8',
-    },
-  };
-  fetch(url, data);
 };
 
 export { getScores, addScore };

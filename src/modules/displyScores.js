@@ -1,9 +1,9 @@
 const displayScore = (scores) => {
   const listDOM = document.querySelector('.listOfGames');
   listDOM.innerHTML = '';
-  scores.forEach(({ name, score }) => {
+  scores.forEach(({ user, score }) => {
     const li = document.createElement('li');
-    li.innerHTML = `${name}:  ${score}`;
+    li.innerHTML = `${user}:  ${score}`;
     listDOM.appendChild(li);
   });
 };
